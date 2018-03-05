@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests" thread-count="2" >
+ <!-- 
+	<test name="Test1">
+		<parameter name="deviceName_" value="iPhoneNew"/>
+		<parameter name="UDID_" value="d497c79403e2740b49d27e8712bc4a603f4c6cd0"/>
+		<parameter name="platformVersion_" value="11.2"/>
+		<parameter name="URL_" value="http://127.0.0.1:4723/wd/hub"/>
+		<classes>
+			<class name="com.sanjeeva.whatbook_test.LaunchApp"/>
+			<class name="com.sanjeeva.whatbook_test.CommonWhatbookObjects"/>
+			<class name="com.sanjeeva.whatbook_elements.WhatbookElements"/>
+		</classes>
+	</test> 
+	 -->
+	 <!--  
+	<test name="Test2">
+		<parameter name="deviceName_" value="iPhone 6s"/>
+		<parameter name="UDID_" value="813723ce13f2b0f1eb602cc79541ec0dabdbe495"/>
+		<parameter name="platformVersion_" value="11.2"/>
+		<parameter name="URL_" value="127.0.0.2:3456/wd/hub"/>
+		<classes>
+			<class name="com.sanjeeva.whatbook_test.LaunchApp"/>
+			<class name="com.sanjeeva.whatbook_test.CommonWhatbookObjects"/>
+			<class name="com.sanjeeva.whatbook_elements.WhatbookElements"/>
+		</classes>
+	</test> 
+	 --> 
+	    
+	  	<test name="Test1">
+		<parameter name="deviceName_" value="iPhoneNew"/>
+		<parameter name="UDID_" value="d497c79403e2740b49d27e8712bc4a603f4c6cd0"/>
+		<parameter name="platformVersion_" value="11.2"/>
+		<parameter name="URL_" value="http://127.0.0.1:4723/wd/hub"/>
+		<classes>
+			<class name="com.sanjeeva.whatbook_test.LaunchApp"/>
+			<class name="com.sanjeeva.whatbook_test.CommonWhatbookObjects">
+			<methods>
+        			<include name="iWantToReadThisBook"/>
+      			</methods>
+      			</class>
+			<class name="com.sanjeeva.whatbook_elements.WhatbookElements"/>
+		</classes>
+	</test> 
+	
+</suite> <!-- Suite -->
